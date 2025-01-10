@@ -1,0 +1,244 @@
+## CapsuleButtonStyle:
+
+A `ButtonStyle` for SwiftUI that applies a Capsule Shape with customizable color styles.
+
+```swift
+CapsuleButtonStyle(textColor: Color.white, backgroundColor: gradient)
+```
+
+Parameters:
+- `textColor`: The color or style applied to the text inside the button. Defaults to `.white`.
+- `backgroundColor`: The background color or style of the button, conforming to `ShapeStyle`. Defaults to `.blue`.
+- `verticalPadding`: The vertical padding inside the button. Defaults to `10`.
+- `horizontalPadding`: The horizontal padding inside the button. Defaults to `20`.
+
+Example:
+
+```swift
+let gradient = LinearGradient(gradient: Gradient(colors: [Color.red, Color.orange]), startPoint: .leading, endPoint: .trailing)
+
+var body: some View {
+    VStack(spacing: 25) {
+        Button("Capsule 1") { }
+            .buttonStyle(CapsuleButtonStyle())
+    
+        Button("Capsule 2") { }
+            .buttonStyle(CapsuleButtonStyle(textColor: .black, backgroundColor: .green))
+    
+        Button("Capsule 3") { }
+            .buttonStyle(CapsuleButtonStyle(textColor: .white, backgroundColor: gradient))
+    
+        Button(action: {}, label: {
+            HStack {
+                Image(systemName: "cloud.sun")
+                Text("Capsule 4")
+            }
+        })
+        .buttonStyle(CapsuleButtonStyle(textColor: Color.white, backgroundColor: gradient))
+    }
+}
+```
+
+<img src="https://github.com/user-attachments/assets/89fcae09-da1b-4470-96b1-b01bd75a692f" width="220">
+
+This style gives buttons a modern, rounded look suitable for various UI contexts.
+
+## ShapeButtonStyle:
+
+A `ButtonStyle` for SwiftUI that allows customization of the button's shape and color.
+
+```swift
+ShapeButtonStyle(textColor: .white, backgroundColor: gradient, shape: .circle)
+```
+
+Parameters:
+- `textColor`: The color or style applied to the text inside the button. Default is `.primary`.
+- `backgroundColor`: The background color or style of the button, conforming to `ShapeStyle`. Default is `.secondary`.
+- `shape`: The custom shape for the button, conforming to `Shape`. The default shape is `Capsule()`.
+- `verticalPadding`: The vertical padding inside the button. Defaults to `10`.
+- `horizontalPadding`: The horizontal padding inside the button. Defaults to `20`.
+
+Example:
+
+```swift
+let gradient = LinearGradient(gradient: Gradient(colors: [Color.red, Color.orange]), startPoint: .leading, endPoint: .trailing)
+
+var body: some View {
+    VStack(spacing: 25) {
+        Button("ShapeButton 1") { }
+            .buttonStyle(ShapeButtonStyle(textColor: .white, backgroundColor: .blue, shape: .rect))
+    
+        Button("ShapeButton 2") { }
+            .buttonStyle(ShapeButtonStyle(textColor: .primary, backgroundColor: .green, shape: .rect(cornerRadius: 8)))
+    
+        Button("ShapeButton 3") { }
+            .buttonStyle(ShapeButtonStyle(textColor: .white, backgroundColor: .red, shape: .capsule))
+                
+        Button("ShapeButton 4") { }
+            .buttonStyle(ShapeButtonStyle(textColor: .white, backgroundColor: .orange, shape: .ellipse))
+    
+        Button(action: {}, label: {
+            Image(systemName: "heart.fill")
+                .font(.title)
+                .padding(5)
+            })
+            .buttonStyle(ShapeButtonStyle(textColor: .white, backgroundColor: gradient, shape: .circle))
+    }
+}
+```
+
+<img src="https://github.com/user-attachments/assets/bd90bcd0-3510-4796-903e-4f78ac4b12c3" width="220">
+
+This style modifies the appearance of buttons to fit within a specified shape, with customizable foreground, background colors and padding. It is highly flexible, accommodating various shapes and color styles.
+
+## BouncyButtonStyle
+
+A customizable `ButtonStyle` for SwiftUI that simulates a bouncy 3D press effect.
+
+```swift
+BouncyButtonStyle()
+```
+
+Parameters:
+- `textColor`: The color of the text when the button is not pressed.
+- `pressedTextColor`: The color of the text when the button is pressed.
+- `backgroundColor`: The background color of the button when it's not pressed.
+- `pressedBackgroundColor`: The background color of the button when pressed.
+- `shape`: The shape of the button, conforming to the `Shape` protocol.
+- `verticalPadding`: The vertical padding inside the button.
+- `horizontalPadding`: The horizontal padding inside the button.
+
+Example:
+
+```swift
+Button("Cartoon Button") { }
+    .buttonStyle(BouncyButtonStyle())
+
+Button("Cartoon Button") { }
+    .buttonStyle(BouncyButtonStyle(shape: .rect(cornerRadius: 4)))
+
+Button(action: { }, label: {
+    Image(systemName: "heart.fill")
+        .font(.title)
+        .padding(5)
+})
+.buttonStyle(BouncyButtonStyle(shape: .circle))
+
+Button("Cartoon Button") { }
+    .buttonStyle(BouncyButtonStyle(textColor: .black,
+                                   pressedTextColor: .black,
+                                   backgroundColor: .green,
+                                   pressedBackgroundColor: .orange))
+```
+
+`BouncyButtonStyle` applies a dynamic and interactive visual effect to button presses, enhancing user experience with a noticeable 'pop'. It's ideal for adding a playful and engaging touch to UI components:
+
+https://github.com/user-attachments/assets/f4d5dd43-3781-4311-a53d-5a5304d86779
+
+This style configures the button to exhibit a bouncy animation upon interaction, with adjustable visual properties.
+
+## GrowingButtonStyle:
+
+A `ButtonStyle` for SwiftUI that scales the button on press, with customizable shape and color styles.
+
+```swift
+GrowingButtonStyle(textColor: .primary, backgroundColor: .green, shape: .rect(cornerRadius: 4))
+```
+
+Parameters:
+- `textColor`: The color or style for the text inside the button, defaulting to `.white`.
+- `backgroundColor`: The background color or style of the button, conforming to `ShapeStyle`, with a default of `.blue`.
+- `shape`: The custom shape for the button, conforming to `Shape`. The default shape is `Capsule()`.
+- `verticalPadding`: The vertical padding inside the button. Defaults to `10`.
+- `horizontalPadding`: The horizontal padding inside the button. Defaults to `20`.
+
+Example:
+
+```swift
+let gradient = LinearGradient(gradient: Gradient(colors: [Color.red, Color.orange]), startPoint: .leading, endPoint: .trailing)
+
+var body: some View {
+    VStack(spacing: 25) {
+        Button("Growing 1") { }
+            .buttonStyle(GrowingButtonStyle())
+        
+        Button("Growing 2") { }
+            .buttonStyle(GrowingButtonStyle(textColor: .primary, backgroundColor: .green, shape: .rect(cornerRadius: 4)))
+        
+        Button("Growing 3") { }
+            .buttonStyle(GrowingButtonStyle(textColor: .primary, backgroundColor: gradient, shape: .rect(cornerRadius: 4)))
+    }
+}
+```
+
+https://github.com/user-attachments/assets/9520da94-8b87-4a84-83e9-da7b79dbaeab
+
+This button style provides an interactive feedback effect by increasing the button's scale when pressed. It allows for customization of the button's foreground and background colors, shape, and padding.
+
+## LoadingButtonStyle:
+
+A `ButtonStyle` for SwiftUI that provides a customizable button with a loading indicator.
+
+```swift
+LoadingButtonStyle(isLoading: $isLoading, loadingState: .resize, backgroundColor: .indigo)
+```
+
+Parameters:
+- `isLoading`: A binding to a boolean indicating whether the button is in a loading state.
+- `loadingState`: An enum that determines the button's behavior when loading. Defaults to `.center`.
+- `textColor`: The color or style for the text inside the button, defaulting to `.white`.
+- `backgroundColor`: The background color or style of the button, conforming to `ShapeStyle`, with a default of `.blue`.
+- `disabledLoadingColor`: The background color or style of the button when it is loading, conforming to `ShapeStyle`, with a default of `.gray`.
+- `shape`: The custom shape for the button, conforming to `Shape`. The default shape is `Capsule()`.
+- `verticalPadding`: The vertical padding inside the button. Defaults to `10`.
+- `horizontalPadding`: The horizontal padding inside the button. Defaults to `20`.
+
+Example:
+
+```swift
+@State private var isLoading: Bool = false
+
+var body: some View {
+    VStack(spacing: 25) {
+        Button("Loading Button 1") {
+            isLoading = true
+            // Simulate a network request or some action
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                isLoading = false
+            }
+        }.buttonStyle(LoadingButtonStyle(isLoading: $isLoading))
+        
+        Button("Loading Button 2") {}
+            .buttonStyle(LoadingButtonStyle(isLoading: $isLoading, loadingState: .leading, backgroundColor: .cyan, horizontalPadding: 40))
+        
+        Button(action: {}, label: {
+            Text("Loading Button 3")
+                .frame(width: 250, height: 40)
+        })
+        .buttonStyle(LoadingButtonStyle(isLoading: $isLoading, loadingState: .resize, backgroundColor: .indigo))
+        
+        Button(action: {}, label: {
+            HStack(spacing: 12) {
+                Image(systemName: "person.crop.circle")
+                    .font(.title2)
+                
+                Text("Loading Button 4")
+                    .font(.title)
+            }
+            .frame(width: 250, height: 40)
+        })
+        .buttonStyle(LoadingButtonStyle(isLoading: $isLoading, loadingState: .leading, backgroundColor: .red, disabledLoadingColor: .red.opacity(0.5)))
+        
+        Button(action: {}, label: {
+            Image(systemName: "heart.fill")
+                .font(.title)
+                .padding(5)
+        })
+        .buttonStyle(LoadingButtonStyle(isLoading: $isLoading, loadingState: .top, backgroundColor: .green, shape: .circle))
+    }
+}
+```
+
+https://github.com/user-attachments/assets/b6fa0b46-53dc-4f81-bc84-fd467c74e407
+
+This button style offers interactive feedback by displaying a `ProgressView` when in a loading state. It allows for extensive customization of the button's appearance, including text color, background color, shape, padding, and the position of the loading indicator. When loading, the button can optionally gray out the background and disable user interactions.
