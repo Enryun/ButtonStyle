@@ -32,7 +32,7 @@ Addresses common challenges in UI design by offering:
 - **Pre-defined Button Designs**: A library of thoughtfully crafted button styles that cover a range of aesthetics and use cases, saving time and design effort.
 - **Flexibility**: Easy-to-adjust parameters allow for a high degree of customization without the need to rewrite or deeply understand the underlying implementation.
 - **Improved User Experience**: Interactive effects and visual feedback not only make the UI more appealing but also guide users intuitively through their interactions, enhancing overall satisfaction.
-- **Seamless Integratio**n: Designed to work out of the box with `SwiftUI`, our button styles can be applied with a single modifier, making it straightforward for developers to upgrade their app's UI with minimal effort.
+- **Seamless Integration and Multi-Platform Support**: Designed to work out of the box with `SwiftUI` across `iOS`, `macOS`, `tvOS`, `watchOS`, and `visionOS`, our button styles can be applied with a single modifier. This makes it straightforward for developers to upgrade their app's UI with minimal effort while ensuring a consistent look and feel across all Apple platforms.
 
 ## Requirements
 
