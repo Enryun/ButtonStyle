@@ -37,7 +37,6 @@ spec.social_media_url   = "https://www.linkedin.com/in/jamesthang/"
 spec.platforms = {
   :ios     => "15.0",
   :osx     => "12.0",
-  :tvos    => "15.0",
   :watchos => "8.0"
 }
 
