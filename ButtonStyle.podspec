@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 spec.name         = "ButtonStyle"
 spec.version      = "1.0.0"
-spec.summary      = "ButtonStyle SDK offers a suite of pre-built, customizable SwiftUI ButtonStyle implementations that streamline UI development and enhance user interactions."
+spec.summary      = "A suite of pre-built, customizable SwiftUI ButtonStyle streamline UI development and enhance user interactions."
 spec.description  = <<-DESC
 This SDK provides a comprehensive collection of button styles—such as capsule, shape, bouncy, growing, and loading buttons—that leverage SwiftUI's ButtonStyle protocol to ensure consistent, modern aesthetics and responsive feedback. Each style comes with configurable parameters, allowing developers to easily tailor colors, shapes, padding, and animations to match their design needs without writing extensive boilerplate code. By centralizing complex styling logic into reusable components, the SDK not only accelerates development but also promotes maintainability and a cohesive user experience across applications.
 DESC
@@ -34,8 +34,12 @@ SOFTWARE.' }
 spec.author             = { "JamesThang" => "jamesthang1996@gmail.com" }
 spec.social_media_url   = "https://www.linkedin.com/in/jamesthang/"
 
-spec.platform     = :ios
-spec.platform     = :ios, "15.0"
+spec.platforms = {
+  :ios     => "15.0",
+  :osx     => "11.0",
+  :tvos    => "15.0",
+  :watchos => "8.0"
+}
 
 spec.source       = { :git => "https://github.com/Enryun/ButtonStyle.git", :tag => "#{spec.version}" }
 
