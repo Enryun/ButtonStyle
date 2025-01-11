@@ -1,6 +1,6 @@
 # ButtonStyle
 
-![iOS 15.0+](https://img.shields.io/badge/iOS-15.0%2B-blue.svg)
+[![Pod Platform](http://img.shields.io/cocoapods/p/SDWebImage.svg?style=flat)](http://cocoadocs.org/docsets/SDWebImage/)
 [![Pod Version](http://img.shields.io/cocoapods/v/SDWebImage.svg?style=flat)](https://cocoapods.org/pods/Tutorials)
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://mit-license.org)
@@ -39,6 +39,10 @@ Addresses common challenges in UI design by offering:
 | Platform | Minimum Version |
 |----------|-----------------|
 | iOS      | 15.0            |
+| macOS    | 12.0            |
+| tvOS     | 15.0            |
+| watchOS  |  8.0            |
+| visionOS |  1.0            |
 
  ## Installation
 This project can be installed using `Swift Package Manager` and `CocoaPod`.
