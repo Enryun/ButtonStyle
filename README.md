@@ -1,18 +1,38 @@
 # ButtonStyle
 
-![iOS 15.0+](https://img.shields.io/badge/iOS-12.0%2B-blue.svg)
+![iOS 15.0+](https://img.shields.io/badge/iOS-15.0%2B-blue.svg)
 [![Pod Version](http://img.shields.io/cocoapods/v/SDWebImage.svg?style=flat)](https://cocoapods.org/pods/Tutorials)
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://mit-license.org)
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Requirements](#requirements)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Author](#author)
+2. [Features](#features)
+3. [Requirements](#requirements)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Author](#author)
 
 ## Overview
+
+In `SwiftUI`, a `ButtonStyle` is a `protocol` that allows developers to define custom appearances and interactions for buttons. By conforming to this protocol, we can encapsulate styling logic into reusable components, ensuring a consistent look and feel across our application. 
+
+Instead of individually styling each button, a `ButtonStyle` defines how a button appears and responds to user interactions (such as taps or presses) in a single place. This approach not only simplifies maintenance but also promotes a cohesive user interface design.
+
+<img src="https://github.com/user-attachments/assets/89fcae09-da1b-4470-96b1-b01bd75a692f" width="220">
+<img src="https://github.com/user-attachments/assets/bd90bcd0-3510-4796-903e-4f78ac4b12c3" width="220">
+<img src="https://github.com/user-attachments/assets/c6d4ba82-51a0-4f93-8632-6e564839e7cb" width="220">
+
+Our SDK leverages the power of `ButtonStyle` to provide a suite of ready-to-use, customizable button styles. These styles—such as `CapsuleButtonStyle`, `ShapeButtonStyle`, `BouncyButtonStyle`, `GrowingButtonStyle`, and `LoadingButtonStyle` are designed to cover a wide range of use cases, from modern, rounded buttons to dynamic, interactive effects.
+
+## Features
+
+Addresses common challenges in UI design by offering:
+
+- **Pre-defined Button Designs**: A library of thoughtfully crafted button styles that cover a range of aesthetics and use cases, saving time and design effort.
+- **Flexibility**: Easy-to-adjust parameters allow for a high degree of customization without the need to rewrite or deeply understand the underlying implementation.
+- **Improved User Experience**: Interactive effects and visual feedback not only make the UI more appealing but also guide users intuitively through their interactions, enhancing overall satisfaction.
+- **Seamless Integratio**n: Designed to work out of the box with `SwiftUI`, our button styles can be applied with a single modifier, making it straightforward for developers to upgrade their app's UI with minimal effort.
 
 ## Requirements
 
