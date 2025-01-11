@@ -1,3 +1,53 @@
+# ButtonStyle
+
+![iOS 15.0+](https://img.shields.io/badge/iOS-12.0%2B-blue.svg)
+[![Pod Version](http://img.shields.io/cocoapods/v/SDWebImage.svg?style=flat)](https://cocoapods.org/pods/Tutorials)
+[![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://mit-license.org)
+
+## Table of Contents
+1. [Overview](#overview)
+2. [Requirements](#requirements)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Author](#author)
+
+## Overview
+
+## Requirements
+
+| Platform | Minimum Version |
+|----------|-----------------|
+| iOS      | 15.0            |
+
+ ## Installation
+This project can be installed using `Swift Package Manager` and `CocoaPod`.
+
+### Swift Package Manager
+
+1. Open your project in Xcode.
+2. Navigate to `File` > `Swift Packages` > `Add Package Dependency`.
+3. Paste the repository URL: `https://github.com/Enryun/ButtonStyle`
+4. Follow the prompts to add the package to your project.
+
+For more details on using Swift Package Manager, visit [Apple's Swift Package Manager documentation](https://swift.org/package-manager/).
+
+### CocoaPods
+
+[CocoaPods](http://cocoapods.org/) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries in your projects. See the [Get Started](http://cocoapods.org/#get_started) section for more details.
+
+Add the following entry to your Podfile:
+
+```rb
+pod 'ButtonStyle'
+```
+
+Then run `pod install`.
+
+Don't forget to `import ButtonStyle` in every file you'd like to use it.
+
+## Usage
+
 ## CapsuleButtonStyle:
 
 A `ButtonStyle` for SwiftUI that applies a Capsule Shape with customizable color styles.
@@ -242,3 +292,9 @@ var body: some View {
 https://github.com/user-attachments/assets/b6fa0b46-53dc-4f81-bc84-fd467c74e407
 
 This button style offers interactive feedback by displaying a `ProgressView` when in a loading state. It allows for extensive customization of the button's appearance, including text color, background color, shape, padding, and the position of the loading indicator. When loading, the button can optionally gray out the background and disable user interactions.
+
+## Author
+
+James Thang, find me on [LinkedIn](https://www.linkedin.com/in/jamesthang/)
+
+Learn more about SwiftUI, check out my book :books: on [Amazon](https://www.amazon.com/Ultimate-SwiftUI-Handbook-iOS-Developers-ebook/dp/B0CKBVY7V6/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1696776124&sr=8-1)
