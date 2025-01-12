@@ -1,0 +1,15 @@
+{
+  "originHash" : "b50a3e68129f9ee0899a22a1ae8c1b8467dcc859c4efbaf76b6ffecbe1fe6279",
+  "pins" : [
+    {
+      "identity" : "buttonstyle",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Enryun/ButtonStyle",
+      "state" : {
+        "branch" : "main",
+        "revision" : "551922973fb51c86270444f6b11cbb6a547bca48"
+      }
+    }
+  ],
+  "version" : 3
+}
