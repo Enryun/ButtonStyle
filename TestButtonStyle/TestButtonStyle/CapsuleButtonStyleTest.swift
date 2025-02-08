@@ -15,13 +15,13 @@ struct CapsuleButtonStyleTest: View {
     var body: some View {
         VStack(spacing: 25) {
             Button("Capsule 1") { }
-                .buttonStyle(CapsuleButtonStyle())
+                .buttonStyle(.capsule)
             
             Button("Capsule 2") { }
-                .buttonStyle(CapsuleButtonStyle(textColor: .black, backgroundColor: .green))
+                .buttonStyle(.capsule(textColor: .black, backgroundColor: .green))
             
             Button("Capsule 3") { }
-                .buttonStyle(CapsuleButtonStyle(textColor: .white, backgroundColor: gradient))
+                .buttonStyle(.capsule(textColor: .white, backgroundColor: gradient))
             
             Button(action: { }, label: {
                 HStack {
@@ -29,7 +29,7 @@ struct CapsuleButtonStyleTest: View {
                     Text("Capsule 4")
                 }
             })
-            .buttonStyle(CapsuleButtonStyle(textColor: Color.white, backgroundColor: gradient))
+            .buttonStyle(.capsule(textColor: Color.white, backgroundColor: gradient))
         }
     }
 }
