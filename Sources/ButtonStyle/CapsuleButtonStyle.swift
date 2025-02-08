@@ -63,6 +63,9 @@ public struct CapsuleButtonStyle<TextShapeStyle: ShapeStyle, BackgroundShapeStyl
 }
 
 public extension ButtonStyle where Self == CapsuleButtonStyle<Color, Color> {
+    
+    static var capsule: CapsuleButtonStyle<Color, Color> { .init() }
+
     /**
      Creates a capsule-shaped button style with solid colors for both the text and background.
      
