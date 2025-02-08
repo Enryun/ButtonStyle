@@ -94,13 +94,15 @@ let gradient = LinearGradient(gradient: Gradient(colors: [Color.red, Color.orang
 var body: some View {
     VStack(spacing: 25) {
         Button("Capsule 1") { }
-            .buttonStyle(CapsuleButtonStyle())
+            .buttonStyle(.capsule)
+//          .buttonStyle(CapsuleButtonStyle())
     
         Button("Capsule 2") { }
             .buttonStyle(CapsuleButtonStyle(textColor: .black, backgroundColor: .green))
-    
+
+        // Alternatively, we have shortcut enumcase usage
         Button("Capsule 3") { }
-            .buttonStyle(CapsuleButtonStyle(textColor: .white, backgroundColor: gradient))
+            .buttonStyle(.capsule(textColor: .white, backgroundColor: gradient))
     
         Button(action: {}, label: {
             HStack {
@@ -108,7 +110,7 @@ var body: some View {
                 Text("Capsule 4")
             }
         })
-        .buttonStyle(CapsuleButtonStyle(textColor: Color.white, backgroundColor: gradient))
+        .buttonStyle(.capsule(textColor: Color.white, backgroundColor: gradient))
     }
 }
 ```
